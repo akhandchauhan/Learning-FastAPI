@@ -56,3 +56,4 @@ def sort_patients(sort_by: str = Query(..., description = 'Sort on the basis of 
 
     return sorted_data
 
+@app.get('/filter')
