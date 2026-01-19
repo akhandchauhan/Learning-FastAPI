@@ -1,0 +1,20 @@
+{
+  "B001": {
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "pages": 320,
+    "rating": 4.8
+  },
+  "B002": {
+    "title": "Deep Work",
+    "author": "Cal Newport",
+    "pages": 296,
+    "rating": 4.5
+  },
+  "B003": {
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "pages": 208,
+    "rating": 4.2
+  }
+}
