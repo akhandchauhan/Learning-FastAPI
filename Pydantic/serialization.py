@@ -22,6 +22,10 @@ patient_dict = {'name':'nitish', 'gender':'male', 'age':35, 'address' :address1}
 patient1 = Patient(**patient_dict)
 
 
-print(patient1)
-print(patient1.name)
-print(patient1.address.city)
+temp = patient1.model_dump()
+temp1 = patient1.model_dump(include = ['name','gender']) # similar for exclude
+
+temp2 = patient1.model_dump_json()
+temp3 = patient1.model_dump(exclude_unset = True)
+print(temp)
+print(type(temp))
