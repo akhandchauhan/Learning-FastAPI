@@ -42,8 +42,6 @@ def specific_book_info(
         )
 
 
-from fastapi import Query
-
 @app.get('/filter')
 def filtered_info(
     min_rating: float = Query(0, description="Minimum rating"),
