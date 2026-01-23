@@ -12,7 +12,7 @@ class Patient(BaseModel):
     contact_details: Dict[str, str]
 
     @model_validator(mode = 'after')
-    def validato_emergency_contact(cls, model):
+    def validate_emergency_contact(cls, model):
 
         if model.age > 60 and 'emergency' not in model.contact_details:
             raise ValueError('Patients older than 60 must have an emergency contact')
